@@ -1,0 +1,51 @@
+ # seriesFilmsCsvPath = r'./assets/raw_titles_PrviIzvor.csv'
+    # seriesCsvPath = r'./assets/tv_shows_DrugiIzvor.csv'
+
+    # #loading data sets
+    # dataSet1 = LoadDataSet(seriesFilmsCsvPath)
+    # dataSet2 = LoadDataSet(seriesCsvPath)
+
+    # #removing unuseful columns
+    # dataSet1 = DropColumns(['index','release_year','age_certification','production_countries','seasons','genres'],dataSet1)
+    # dataSet2 =  DropColumns(['Hulu','Prime Video','Disney+','Type','Age','ID','Year','Unnamed: 0'],dataSet2)
+   
+    # #only shows
+    # dataSet1 = RemoveAllRowsExcept(dataSet1,'type','SHOW')
+    # dataSet1 = DropColumns(['type'],dataSet1)
+
+    # #remove empty rotten tomatoes fields
+
+    # #formated IMDb column and removed empty rows
+    # dataSet2 = RemoveAllRowsWithNanField(dataSet2,'IMDb')
+    # dataSet2 = FormateImdbScore(dataSet2)
+
+    # #drop series wich not netflix
+    # dataSet2 = RemoveAllRowsExcept(dataSet2,'Netflix',1)
+    # dataSet2 = DropColumns(['Netflix'],dataSet2)
+
+
+    # #removed rows with empty column imdb_score 
+    # dataSet1 = RemoveAllRowsWithNanField(dataSet1,'imdb_score')
+   
+
+
+
+
+    # dataSet2 = ChangeNameOfColumn(dataSet2,'Title','title')
+
+    # dataSet = MergeTwoDataSetsByColumn([dataSet1, dataSet2],['title'])
+
+    # ExportDataSetAsCsv(dataSet,'dataset')
+
+    # ExportDataSetAsCsv(dataSet1,"ds1")
+    # ExportDataSetAsCsv(dataSet2,"ds2")
+
+
+    # for i in dataSet1['imdb_score']:
+    #         print(i)
+
+    #print(dataSet1)
+    #print(dataSet2)
+    #dataSet1.info()
+    #dataSet2.info()
+    
