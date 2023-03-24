@@ -78,4 +78,8 @@ if __name__ == "__main__":
 
 
 
+    #########################################################################
+
+    #startIndex = 3100
+    #ScrapeComments(dataSet1, startIndex)
 
